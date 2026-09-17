@@ -1,0 +1,23 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.iamlegendz.hitforge'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.iamlegendz.hitforge'
+        minSdk 28
+        targetSdk 35
+        versionCode 14
+        versionName '1.4.0'
+        ndk { abiFilters 'arm64-v8a' }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    externalNativeBuild { cmake { path 'src/main/cpp/CMakeLists.txt' } }
+}
+
+dependencies {
+    implementation 'androidx.core:core:1.17.0'
+}

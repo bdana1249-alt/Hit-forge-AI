@@ -1,0 +1,10 @@
+{
+  "format": "GGUF",
+  "runtime": "llama.cpp",
+  "abi": "arm64-v8a",
+  "llama_cpp_tag": "b10982",
+  "context_start": 4096,
+  "temperature_default": 0.85,
+  "max_tokens_default": 768,
+  "license": "VERIFY_EACH_MODEL_LICENSE"
+}
